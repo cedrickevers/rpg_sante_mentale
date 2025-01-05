@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sélection du Questionnaire</title>
+    <style>...</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Choisissez votre Questionnaire</h1>
+        <p>Sélectionnez un questionnaire...</p>
+        <form method="post" action="qcm_redirect.php">
+            <div class="questionnaire-option">
+                <input type="radio" name="qcm" value="court" id="court">
+                <label for="court">Questionnaire rapide - 3 questions par catégorie</label>
+            </div>
+            <div class="questionnaire-option">
+                <input type="radio" name="qcm" value="moyen" id="moyen">
+                <label for="moyen">Questionnaire normal - 5 questions par catégorie</label>
+            </div>
+            <div class="questionnaire-option">
+                <input type="radio" name="qcm" value="long" id="long">
+                <label for="long">Questionnaire poussé - 10 questions par catégorie</label>
+            </div>
+            <input type="submit" value="Commencer">
+        </form>
+    </div>
+</body>
+</html>
