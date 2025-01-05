@@ -1,0 +1,1 @@
+<?php $qcm = $_POST['qcm']; switch ($qcm) { case 'court': header("Location: qcm_court.php"); break; case 'moyen': header("Location: qcm_moyen.php"); break; case 'long': header("Location: qcm_long.php"); break; default: echo "Veuillez sélectionner un questionnaire."; break; } ?>
